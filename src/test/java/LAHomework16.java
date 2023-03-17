@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+<<<<<<< Updated upstream
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,6 +9,12 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 import static java.lang.String.*;
+=======
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+>>>>>>> Stashed changes
 
 public class LAHomework16 extends BaseTest{
 
@@ -25,8 +32,11 @@ public class LAHomework16 extends BaseTest{
             Thread.sleep(2000);
             driver.quit();
 
+<<<<<<< Updated upstream
 //            https://bbb.testpro.io/registration.php
 
+=======
+>>>>>>> Stashed changes
         }
 
     }
