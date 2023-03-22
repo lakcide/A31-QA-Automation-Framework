@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,6 +20,25 @@ public class BaseTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
+    }
+    public void login(String email, String password) {
+        provideEmail(email);
+        providePassword(password);
+        clickSubmit();
+    }
+    public void provideEmail(String email) {
+        WebElement emailField = driver.findElement(By.cssSelector("[type='email']"));
+        emailField.clear();
+        emailField.sendKeys(email);
+    }
+    public void providePassword(String password) {
+        WebElement passwordField = driver.findElement(By.cssSelector("[type='password']"));
+        passwordField.clear();
+        passwordField.sendKeys(password);
+    }
+    public void clickSubmit(){
+        WebElement submitButton = driver.findElement(By.xpath("//button [@type='submit']"));
+        submitButton.click();
     }
 
 }
