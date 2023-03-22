@@ -1,15 +1,9 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-
-import static java.lang.String.*;
-
-public class LAHomework16 extends BaseTest{
+public class LaHomework16 extends BaseTest{
 
     @Test
     public void Navigation () throws InterruptedException {
