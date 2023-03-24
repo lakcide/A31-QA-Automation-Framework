@@ -19,7 +19,6 @@ public class LaHomework17B extends BaseTest {
         clickAddTo();
         Thread.sleep(2000);
         songToPlaylist("VIP Playlist");
-
         Assert.assertTrue(getAddedSongNotificationMsg().contains(newSongAddedText));
 
     }
@@ -42,6 +41,7 @@ public class LaHomework17B extends BaseTest {
         public String getAddedSongNotificationMsg(){
             WebElement popUpMsg = driver.findElement(By.cssSelector("div.success.show"));
             return popUpMsg.getText();
+
         }
 
     }
