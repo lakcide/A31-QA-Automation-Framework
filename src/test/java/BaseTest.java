@@ -88,4 +88,9 @@ public class BaseTest {
         avatarIcon.click();
 
     }
+    public static void login () throws InterruptedException {
+        provideEmail("lakcide@gmail.com");
+        providePassword("te$t$tudent");
+        clickSubmit();
+    }
 }
